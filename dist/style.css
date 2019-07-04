@@ -1,0 +1,29 @@
+body{
+    background: rgb(144, 241, 144);
+
+}
+#results{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows : repeat(3, 1fr);
+    
+}
+img{
+    width: 120px;
+    height: 80px;
+}
+.box{
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    margin-top:10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: 2px solid blue;
+    background: rgb(255, 187, 0);
+
+}

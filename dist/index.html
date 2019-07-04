@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Totally Real Site</title><link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+</head>
+
+<body>
+
+    <input id="name" placeholder="search for ingredient here">
+    <button id="search" onclick="getIngredient()">Search!</button>
+    <br>
+    <div id="results"></div>
+    <script id="food-template" type="text-/x-handlebars-template">
+    {{#each recipe}}
+        <div class = "box">
+            <div> <a href= {{link}} > <h1> {{title}} </h1> </a>
+            <img src= {{picture}} id={{idMeal}}>
+            <br>
+            <span class="in"> indgredients : <br> {{ingredients}}
+            </span>
+        </div>
+        
+        </div>
+        {{/each}}
+    </script>
+    
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
